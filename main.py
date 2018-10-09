@@ -91,7 +91,7 @@ def saveToJson(writeFile, jsonFile):# save times dict to json
 def getAPI(): # Get information from nicehash API
     global workers
     try:
-        with urllib.request.urlopen("https://api.nicehash.com/api?method=stats.provider.workers&addr=3K51mGHP4gbpgdHrjqfhyfJ5bfpTXkwih7") as url:
+        with urllib.request.urlopen("https://api.nicehash.com/api?method=stats.provider.workers&addr="+address) as url:
             data = json.loads(url.read().decode())
             workers = (data['result']['workers'])
             url.close()
@@ -103,7 +103,6 @@ def recordTimes(): # main loop
     running = True
 
     while(running):
-        print('hey')
 
         getAPI()
         # list of workers done in this iteration
