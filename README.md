@@ -1,0 +1,1 @@
+# NiceHash Mining Timer
