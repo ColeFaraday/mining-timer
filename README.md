@@ -1,1 +1,2 @@
 # NiceHash Mining Timer
+test
