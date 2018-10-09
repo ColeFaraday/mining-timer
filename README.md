@@ -6,3 +6,11 @@ To setup this tool just clone the repo using `git clone https://github.com/ColeF
 
 ## Usage
 To  open the program run main.py with `python3 main.py`. This will enter you into a prompt where you can enter commands. To start a new recording session enter `start`. This will begin recording the times for each worker.
+
+### All commands
+Below is a list of all of the availible commands, their options, and their usage
+
+- `start` - Starts recording the times of the workers
+    - `-s /path/to/source.json` option - Specifies the source json file which the recording will use as a starting point. This is used to continue after a system crash, etc.
+- `resume` - Starts recording using the last generated mining times as a starting point
+
